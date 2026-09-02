@@ -637,6 +637,19 @@ body.menu-open { overflow: hidden; }
 }
 .project-link:hover { gap: 11px; color: var(--accent-strong); }
 
+/* AXL card foot: primary live link + secondary GitHub link (scoped, additive) */
+.project-foot-actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.project-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s var(--ease), gap 0.2s var(--ease);
+}
+.project-secondary:hover { color: var(--text); gap: 10px; }
+
 /* HALO orbital visual */
 .halo-visual {
   position: relative;
